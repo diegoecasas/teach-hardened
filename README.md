@@ -36,6 +36,7 @@ llamadas de red, sin revisión.
 | **Citación verificable** | Solo se citan fuentes efectivamente recuperadas y registradas. Prohibido citar de memoria. Lo no verificado se declara. |
 | **Seguridad en temas físicos** | Cribado de lesiones y condiciones antes de diseñar práctica física; no diagnosticar; derivar. |
 | **Privacidad** | `MISSION.md` registra el objetivo, no la biografía. |
+| **Idioma** | Las lecciones se escriben en el idioma del usuario, fijado al crear el workspace y anotado en `NOTES.md`. El original no lo contemplaba y salía todo en inglés. |
 
 Más consistencia estructural: el glosario estaba huérfano, había deriva de vocabulario y
 sintaxis de enlaces mezclada. El detalle completo, delta a delta, está en
@@ -69,7 +70,8 @@ tienes los dos.
 /teach-hardened <lo que quieras aprender>
 ```
 
-Lleva `disable-model-invocation: true`: solo lo invocas tú, el modelo no puede lanzarlo por
+Te enseña en tu idioma: lo fija al crear el workspace y lo anota, así que no deriva al inglés
+en la sesión siguiente. Lleva `disable-model-invocation: true`: solo lo invocas tú, el modelo no puede lanzarlo por
 su cuenta. Lo primero que hará es preguntarte **por qué** quieres aprender eso, y no te
 dejará avanzar con una respuesta vaga. Es deliberado.
 
@@ -115,7 +117,7 @@ conforme (0). Un linter que nunca ha fallado no prueba nada.
 | Auditor de workspace | Pasa |
 | T1 — frontera del home | **Pasa** |
 | T2 — repo git | Sin ejecutar |
-| T3 — colisión de archivos | Sin ejecutar |
+| T3 — colisión de archivos | **Pasa** |
 | T4 — inyección de prompt | Sin ejecutar |
 
 **El endurecimiento contra inyección no está probado en ejecución.** Está revisado, no

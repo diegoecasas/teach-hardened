@@ -28,6 +28,27 @@ Once the directory is settled:
 - Write a `.gitignore` containing `*` at the workspace root, so the workspace cannot be committed by accident. Mention it to the user; they can delete it if they want to version their learning.
 - Tell the user, once, that the workspace records their goals and progress in plain text on disk.
 
+## Language
+
+Everything the user reads — lessons, reference documents, the glossary, `MISSION.md`, learning
+records, `NOTES.md`, and your side of the conversation — is written in **the user's language**.
+Not yours by default.
+
+Settle it when you create the workspace and record it in `NOTES.md`, so later sessions cannot
+drift back:
+
+- Default to the language the user is writing to you in.
+- The topic is not the signal. Someone can ask about "basket weaving" or "React hooks" from any
+  language; what counts is the words they put around it, not the name of the subject.
+- If you genuinely cannot tell, ask. It is one question and it costs nothing.
+
+Technical vocabulary is the exception worth naming. Keep the term the field actually uses and
+gloss it, rather than inventing a translation nobody in that field would recognise. `GLOSSARY.md`
+holds both: the term as practitioners say it, and the definition in the user's language.
+
+This skill's own instructions and the `*-FORMAT.md` documents stay in English — they are
+addressed to you, not to the user. Nothing you produce is.
+
 ## Teaching Workspace
 
 Treat the workspace directory settled above as a teaching workspace. The state of their learning is captured in this directory in several files:
@@ -199,3 +220,5 @@ Glossaries, in particular, are an essential reference. The glossary is the one r
 ## `NOTES.md`
 
 The user will sometimes express preferences of how they want to be taught, or things you should keep in mind. This is the place to record those preferences, so you can refer back to them when designing lessons or working with the user.
+
+The teaching language settled at workspace creation lives here too, on its own line, so a later session reads it before writing anything.

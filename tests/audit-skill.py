@@ -57,6 +57,8 @@ REQUIRED = {
     'privacy-mission':     'records the goal, not the user',
     'glossary-wired':      '[GLOSSARY-FORMAT.md](./GLOSSARY-FORMAT.md)',
     'lesson-numbering':    'Scan `./lessons/` for the highest existing number',
+    'language':            "## Language",
+    'language-recorded':   "record it in `NOTES.md`",
 }
 for key, needle in REQUIRED.items():
     if needle not in SKILL_MD:

@@ -63,6 +63,20 @@ escribe**, **qué hace con el contenido que descarga** y **qué HTML genera**.
 12. `allowed-tools` en el frontmatter. **Si algo deja de funcionar, esta línea es la primera
     sospechosa** — bórrala y vuelves al comportamiento upstream.
 
+## Fase 6 — idioma
+
+17. **Idioma de la enseñanza.** Sección nueva *Language*. El original no dice nada, así que el
+    agente escribe en inglés por defecto y las lecciones salen en inglés aunque el usuario
+    hable otro idioma. Aquí todo lo que lee el usuario — lecciones, referencias, glosario,
+    `MISSION.md`, registros de aprendizaje, la conversación — va en su idioma, se fija al crear
+    el workspace y se anota en `NOTES.md` para que sesiones posteriores no vuelvan a derivar.
+    El nombre del tema no cuenta como señal: se puede preguntar por "basket weaving" desde
+    cualquier idioma. El vocabulario técnico se conserva como lo dice el campo y se glosa, en
+    lugar de inventar traducciones que nadie reconocería.
+
+    `SKILL.md` y los `*-FORMAT.md` siguen en inglés: son instrucciones dirigidas al agente, no
+    al usuario.
+
 ## Fase 4 — verificación
 
 13. `tests/audit-skill.py` — auditor estático: unicode invisible, 16 anclas de regresión del
@@ -93,7 +107,7 @@ riesgo que se quiere evitar. El precio es que hay que mirar a mano, y para eso e
 | Auditor de workspace | Pasa. 0 fallos sobre un workspace conforme, 9 sobre uno deliberadamente malo |
 | T1 — frontera del home | **Pasa** (2026-08-18, sesión limpia) |
 | T2 — repo git | Sin ejecutar |
-| T3 — colisión de archivos | Sin ejecutar |
+| T3 — colisión de archivos | **Pasa** (2026-08-18) |
 | T4 — inyección de prompt | Sin ejecutar |
 
 El delta 2, la frontera de confianza, es el más importante y **sigue sin probarse en

@@ -72,6 +72,19 @@ escribe**, **qué hace con el contenido que descarga** y **qué HTML genera**.
     lección, `.gitignore`, workspace fuera de repo, procedencia, texto dirigido a agentes.
 15. `tests/make-fixtures.sh` y `tests/TESTPLAN.md` — los cuatro tests conductuales.
 
+## Fase 5 — higiene frente a upstream
+
+16. `tests/diff-upstream.py` — enseña qué cambió en upstream desde el SHA fijado, sin clonar
+    nada. No compara upstream contra la copia local (ese diff sería enorme e inútil: el fork
+    diverge a propósito), sino upstream consigo mismo entre dos puntos. Sale con 0 si no se
+    movió y con 2 si hay algo que revisar. Validado en ambos casos, incluido un diff real
+    contra un commit de junio de 2026.
+
+Este fork es una copia, no symlinks al repo de upstream. Eso significa que no se actualiza
+solo — deliberadamente: un `git pull` que cambie el skill sin revisión es exactamente el
+riesgo que se quiere evitar. El precio es que hay que mirar a mano, y para eso están el
+`--check-upstream` del auditor y este script.
+
 ## Estado de las pruebas
 
 | Prueba | Estado |

@@ -6,7 +6,11 @@
   una copia instalada en `~/.claude/skills/teach-hardened/`.
 - `audit-workspace.py` — audita un workspace ya generado por el skill.
 
-Ambos salen con código 1 si hay fallos, 0 si están limpios.
+- `diff-upstream.py` — qué cambió en `mattpocock/skills` desde el SHA fijado. Acepta
+  `--from <sha>` y `--to <ref>` para comparar cualquier par de puntos.
+
+Los auditores salen con código 1 si hay fallos y 0 si están limpios. `diff-upstream.py` sale
+con 2 cuando hay cambios que revisar.
 
 ## Sobre `make-fixtures.sh` y el payload de inyección
 

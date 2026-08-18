@@ -93,7 +93,17 @@ Audita el resultado real: CSP, ausencia de red y `eval` en cada lección y asset
 workspace fuera de repo, procedencia en `RESOURCES.md`, y texto dirigido a agentes que haya
 aterrizado en el workspace.
 
-Ambos están validados en las dos direcciones: contra una copia mutada del skill (10 hallazgos
+Y para cuando upstream se mueva:
+
+```bash
+python3 tests/diff-upstream.py
+```
+
+Enseña qué cambió en el skill original desde el SHA fijado, sin clonar nada. Este fork es una
+copia y no se actualiza solo — a propósito. Al adoptar algo de upstream, el auditor te dice si
+el merge se llevó el endurecimiento por delante.
+
+Los dos auditores están validados en las dos direcciones: contra una copia mutada del skill (10 hallazgos
 sobre 5 clases de mutación) y contra un workspace deliberadamente malo (9 fallos) y uno
 conforme (0). Un linter que nunca ha fallado no prueba nada.
 

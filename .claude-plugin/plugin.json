@@ -1,0 +1,13 @@
+{
+  "name": "teach-hardened",
+  "version": "0.1.0",
+  "description": "Fork endurecido del skill `teach` de mattpocock/skills: fronteras de directorio de trabajo, contenido web tratado como dato y no como instrucción, lecciones sin red, citación verificable.",
+  "author": {
+    "name": "Diego Casas",
+    "url": "https://github.com/diegoecasas"
+  },
+  "repository": "https://github.com/diegoecasas/teach-hardened",
+  "license": "MIT",
+  "keywords": ["teaching", "learning", "prompt-injection", "hardening", "productivity"],
+  "skills": ["./skills/teach-hardened"]
+}

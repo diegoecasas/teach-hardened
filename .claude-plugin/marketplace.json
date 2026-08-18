@@ -1,0 +1,17 @@
+{
+  "name": "diegoecasas",
+  "owner": {
+    "name": "Diego Casas",
+    "url": "https://github.com/diegoecasas"
+  },
+  "description": "Skills endurecidos para Claude Code.",
+  "plugins": [
+    {
+      "name": "teach-hardened",
+      "source": "./",
+      "description": "Fork endurecido del skill `teach` de mattpocock/skills.",
+      "category": "productivity",
+      "keywords": ["teaching", "learning", "hardening"]
+    }
+  ]
+}

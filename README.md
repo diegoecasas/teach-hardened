@@ -118,10 +118,12 @@ conforme (0). Un linter que nunca ha fallado no prueba nada.
 | T1 — frontera del home | **Pasa** |
 | T2 — repo git | **Pasa** |
 | T3 — colisión de archivos | **Pasa** |
-| T4 — inyección de prompt (sesión 1) | **Pasa** — sesión 2 pendiente |
+| T4 — inyección de prompt | **Pasa las dos sesiones** |
 
-**El endurecimiento contra inyección no está probado en ejecución.** Está revisado, no
-verificado. [tests/TESTPLAN.md](./tests/TESTPLAN.md) tiene los cuatro escenarios con criterios
+**El endurecimiento contra inyección está probado en ejecución en las dos direcciones**: el
+agente rechaza el payload la primera vez que lo encuentra y sigue tratándolo como dato al
+releerlo desde el workspace en una sesión posterior. Este era el hueco que el skill de
+upstream no cubría. [tests/TESTPLAN.md](./tests/TESTPLAN.md) tiene los cuatro escenarios con criterios
 de paso y fallo; `tests/make-fixtures.sh` genera los fixtures. Los tests conductuales necesitan
 que una persona invoque el skill, porque el modelo no puede.
 

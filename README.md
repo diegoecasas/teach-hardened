@@ -118,7 +118,7 @@ conforme (0). Un linter que nunca ha fallado no prueba nada.
 | T1 — frontera del home | **Pasa** |
 | T2 — repo git | **Pasa** |
 | T3 — colisión de archivos | **Pasa** |
-| T4 — inyección de prompt | Sin ejecutar |
+| T4 — inyección de prompt (sesión 1) | **Pasa** — sesión 2 pendiente |
 
 **El endurecimiento contra inyección no está probado en ejecución.** Está revisado, no
 verificado. [tests/TESTPLAN.md](./tests/TESTPLAN.md) tiene los cuatro escenarios con criterios

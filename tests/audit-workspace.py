@@ -103,7 +103,7 @@ res = WS / 'RESOURCES.md'
 if res.exists():
     entries = [b for b in re.split(r'\n(?=-\s)', res.read_text()) if 'http' in b]
     for e in entries:
-        if not re.search(r'retrieved|accessed|read in full|skimmed|not read', e, re.I):
+        if not re.search(r'retrieved|accessed|read in full|skimmed|not read|recuperad[ao]|le[íi]d[ao]|consultad[ao]|no le[íi]d[ao]|cuarentena|no fiable', e, re.I):
             warn('provenance', f"RESOURCES.md entry without provenance: {e.strip().splitlines()[0][:70]}")
 
 # --- laundered agent-directed text ------------------------------------------

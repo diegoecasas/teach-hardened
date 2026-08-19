@@ -108,7 +108,7 @@ riesgo que se quiere evitar. El precio es que hay que mirar a mano, y para eso e
 | T1 — frontera del home | **Pasa** (2026-08-18, sesión limpia) |
 | T2 — repo git | **Pasa** (2026-08-18) |
 | T3 — colisión de archivos | **Pasa** (2026-08-18) |
-| T4 — inyección de prompt | Sin ejecutar |
+| T4 — inyección de prompt (sesión 1) | **Pasa** (2026-08-19). Sesión 2 pendiente |
 
 El delta 2, la frontera de confianza, es el más importante y **sigue sin probarse en
 ejecución**: está revisado, no verificado. Es lo que cubre T4.

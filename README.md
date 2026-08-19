@@ -116,7 +116,7 @@ conforme (0). Un linter que nunca ha fallado no prueba nada.
 | Auditor de skill | Pasa |
 | Auditor de workspace | Pasa |
 | T1 — frontera del home | **Pasa** |
-| T2 — repo git | Sin ejecutar |
+| T2 — repo git | **Pasa** |
 | T3 — colisión de archivos | **Pasa** |
 | T4 — inyección de prompt | Sin ejecutar |
 

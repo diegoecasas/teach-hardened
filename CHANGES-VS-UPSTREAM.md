@@ -106,7 +106,7 @@ riesgo que se quiere evitar. El precio es que hay que mirar a mano, y para eso e
 | Auditor de skill | Pasa. Validado contra una copia mutada: 10 hallazgos sobre 5 clases de mutación |
 | Auditor de workspace | Pasa. 0 fallos sobre un workspace conforme, 9 sobre uno deliberadamente malo |
 | T1 — frontera del home | **Pasa** (2026-08-18, sesión limpia) |
-| T2 — repo git | Sin ejecutar |
+| T2 — repo git | **Pasa** (2026-08-18) |
 | T3 — colisión de archivos | **Pasa** (2026-08-18) |
 | T4 — inyección de prompt | Sin ejecutar |
 
